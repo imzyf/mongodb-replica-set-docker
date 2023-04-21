@@ -29,4 +29,5 @@ docker compose exec mongo1 mongo
 
 ## References
 
-- [](https://blog.devgenius.io/how-to-deploy-a-mongodb-replicaset-using-docker-compose-a538100db471)
+- [mongo | hub.docker](https://hub.docker.com/_/mongo)
+- [How to deploy a MongoDB replica set using docker-compose](https://blog.devgenius.io/how-to-deploy-a-mongodb-replicaset-using-docker-compose-a538100db471)
