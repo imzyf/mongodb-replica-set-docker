@@ -25,9 +25,6 @@ services:
       - mongo2
       - mongo3
     restart: always
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: root
     entrypoint: [ "/usr/bin/mongod", "--bind_ip_all", "--replSet", "dbrs" ]
 
   mongo2:
@@ -66,6 +63,4 @@ services:
     depends_on: 
       - mongo1
     environment:
-      ME_CONFIG_MONGODB_ADMINUSERNAME: root
-      ME_CONFIG_MONGODB_ADMINPASSWORD: root
       ME_CONFIG_MONGODB_URL: mongodb://admin:admin@mongo1:27017/
